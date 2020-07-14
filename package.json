@@ -2,22 +2,29 @@
   "name": "npm-module-template",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretty:code": "prettier --write *.ts",
+    "pretty:project": "prettier --write ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alcha/NPM-Module-Template.git"
   },
   "author": {
-    "name": "Alcha",
-    "email": "hello@alcha.org",
-    "url": "https://hasslefree.solutions"
+    "name": "4lch4",
+    "email": "git@4lch4.dev",
+    "url": "https://4lch4.com"
   },
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/Alcha/NPM-Module-Template/issues"
   },
-  "homepage": "https://github.com/Alcha/NPM-Module-Template#readme"
+  "homepage": "https://github.com/Alcha/NPM-Module-Template#readme",
+  "devDependencies": {
+    "prettier": "2.0.5",
+    "nodemon": "2.0.4"
+  }
 }
